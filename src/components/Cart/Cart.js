@@ -17,7 +17,7 @@ const Cart = props => {
     };
 
     const cartItemAddHandler = item => {
-        cartCtx.addItem({...item, amount: 1}); // bo nie chcemy podnosi do kwadratu obecna ilosc tylko dodac 1 element
+        cartCtx.addItem({...item, amount: 1}); // bo nie chcemy podnosic do kwadratu obecna ilosc tylko dodac 1 element
     };
 
 
