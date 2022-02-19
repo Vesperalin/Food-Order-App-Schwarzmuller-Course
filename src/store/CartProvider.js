@@ -6,7 +6,7 @@ const defaultCartState = {
     items: [],
     totalAmount: 0
 }
-/*name, amount, price, to jest w item*/
+/*name, amount, price, id: to jest w item*/
 
 const cartReducer = (state, action) => {
     if (action.type === 'ADD') {
