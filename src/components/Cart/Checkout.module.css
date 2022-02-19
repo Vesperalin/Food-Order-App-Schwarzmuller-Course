@@ -1,6 +1,6 @@
 .form {
   margin: 1rem 0;
-  height: 17rem;
+  height: 19rem;
   overflow: auto;
 }
 
@@ -35,7 +35,7 @@
   background-color: transparent;
   border: none;
   border-radius: 25px;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2rem; 
 }
 
 .actions button:hover,
