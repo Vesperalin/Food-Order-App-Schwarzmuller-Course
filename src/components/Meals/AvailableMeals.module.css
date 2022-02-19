@@ -6,11 +6,13 @@
 }
 
 .mealsLoading {
-  max-width: 60rem;
-  width: 90%;
-  margin: 2rem auto;
   text-align: center;
   color: white;
+}
+
+.mealsError {
+  text-align: center;
+  color: rgb(211, 0, 0);
 }
 
 .meals ul {
