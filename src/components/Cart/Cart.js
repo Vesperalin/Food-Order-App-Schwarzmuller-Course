@@ -25,6 +25,16 @@ const Cart = props => {
     setIsCheckingOut(true);
   };
 
+  const submitOrderHandler = userData => {
+    fetch('https://food-react-app-course-default-rtdb.firebaseio.com/orders.json', {
+      method: 'POST',
+      body: JSON.stringify({
+        user: userData,
+        orderedItems: cartCtx.items
+      })
+    });
+  };
+
   const cartItems = <ul className={styles['cart-items']}>{
     cartCtx.items.map(item =>
       <CartItem
@@ -53,6 +63,7 @@ const Cart = props => {
       {isCheckingOut &&
         <Checkout
           onCancel={props.onClose}
+          onConfirm={submitOrderHandler}
         />
       }
       {!isCheckingOut && modalActions}
